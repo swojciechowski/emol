@@ -1,4 +1,4 @@
-# Evolutionary Multi-Objective Learning
+# **E**volutionary **M**ulti-**O**bjective **L**earning
 
 Package with learning algorithms based on Evolutionary Multi-objective Approach.
 
