@@ -7,13 +7,10 @@ from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.termination.max_gen import MaximumGenerationTermination
 
 from pymoo.operators.sampling.rnd import BinaryRandomSampling, FloatRandomSampling
-from pymoo.operators.sampling.lhs import LatinHypercubeSampling
 from pymoo.operators.crossover.spx import SinglePointCrossover
 from pymoo.operators.crossover.sbx import SimulatedBinaryCrossover
 from pymoo.operators.crossover.pntx import SinglePointCrossover
 from pymoo.operators.mutation.bitflip import BitflipMutation
-from pymoo.operators.mutation.pm import PolynomialMutation
-from pymoo.operators.mutation.gauss import GaussianMutation
 
 from .uniform_mutation import UniformMutation
 

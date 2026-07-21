@@ -1,10 +1,8 @@
 import numpy as np
-from scipy.spatial.distance import cdist
 from sklearn.base import BaseEstimator, ClassifierMixin
 
 from sklearn.neighbors import KDTree
 
-import time
 
 class KNN(BaseEstimator, ClassifierMixin):
     """

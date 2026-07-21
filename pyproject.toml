@@ -18,13 +18,19 @@ authors = [
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
 # Dependencies go here directly
 dependencies = [
-    "numpy>=1.20.0",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "pymoo>=0.6.2",
+    "matplotlib",
+    "imblearn",
+    "imageio",
+    "pandas",
 ]
 
 [project.urls]

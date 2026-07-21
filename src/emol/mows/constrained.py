@@ -1,4 +1,3 @@
-import numpy as np
 
 from pymoo.core.repair import Repair
 

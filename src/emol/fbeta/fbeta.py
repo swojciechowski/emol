@@ -1,8 +1,6 @@
 from itertools import combinations
 
-import matplotlib.pyplot as plt
 import numpy as np
-from numpy._core.umath import isnan
 
 DEFAULT_LIM = 100
 DEFAULT_N = 200
