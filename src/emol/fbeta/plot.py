@@ -1,8 +1,8 @@
 import numpy as np
-from .fbeta import *
+from .fbeta import fbeta, fbeta_crossing_mat, DEFAULT_LIM, DEFAULT_N
 
 from itertools import zip_longest
-
+import matplotlib.pyplot as plt
 from scipy.stats import mannwhitneyu
 
 LEGEND_SIZE = 8

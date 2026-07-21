@@ -150,16 +150,8 @@ class BinaryConfusionMatrix:
         return self.AP / self.total_population
 
     @cached_property
-    def positive_likelihood_ratio(self):
-        return zero_division(self.TPR, self.FPR)
-
-    @cached_property
-    def negative_likelihood_ratio(self):
-        return zero_division(self.FNR, self.TNR)
-
-    @cached_property
     def diagnostic_odds_ratio(self):
-        return zero_division(self.positive_likelihood_ratio, self.negative_likelihood_ratio)
+        return zero_division(self.PLR, self.NLR)
 
     @cached_property
     def markednes(self):
