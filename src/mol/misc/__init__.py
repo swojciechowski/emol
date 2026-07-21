@@ -1,0 +1,1 @@
+from .random_classifier.bayes_random_classifier import BayesRandomClassifier as RandomClassifier
