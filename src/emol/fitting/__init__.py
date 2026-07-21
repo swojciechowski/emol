@@ -1,4 +1,4 @@
-from .bootstrap import BootstrapFitting
+from .synthetic import SyntheticFitting
 from .cv import CrossValidationFitting
-from .dummy import DummyFitting
+from .leaking import LeakingFitting
 from .holdout import HoldOutFitting
