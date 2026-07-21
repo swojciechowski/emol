@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]            # Look inside the "src" folder (or "lib", etc.)
+include = ["mol"]  # Optional: pattern of package directories to include
+
+[project]
+name = "scikit-mol"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Szymon Wojciechowski", email = "szymon.wojciechowski@pwr.edu.pl" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Dependencies go here directly
+dependencies = [
+    "numpy>=1.20.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/my_awesome_package"
