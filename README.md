@@ -2,13 +2,15 @@
 
 Package with learning algorithms based on Evolutionary Multi-objective Approach.
 
-
 **Current Package Status:** WIP
 
 ---
 
-Provided methods are highly dependent on `pymoo` package, which is a main optimization framework used by this project.
+Implemented methods are strongly related to `pymoo` package (https://pymoo.org). 
+This allows experimenting with different configurations of solvers (as provided by `pymoo` API), while maintaining basic configuration of "Machine Learning as Optimization" tasks presented in library. This approach is focusing on implementation of operators over solvers which are parameterized.
 
-All implementations are (or will be in future) compatible with `scikit-learn` package.
+All implementations are compatible with `scikit-learn` package, where provided code extends it to multi-objective scenarios.
 
-Finally, a note for future contributors: please prefer `numpy` operators (especially broadcasting) over standard python operators.
+Tools exposed in "helpers" and "misc" directories are an additional code, not related to main purpose of this library.
+
+Most of the math operators are and should be used as `numpy` operators (especially operators requiring broadcasting). This approach is faster and preferred over standard python operators. This note especially refers to scenarios where new objective functions will be implemented. Note, that those will be evaluated many times in optimization loop.
